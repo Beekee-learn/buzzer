@@ -18,7 +18,7 @@ module.exports = {
 			{ innerHTML: 'Vous devez activer Javascript sur votre navigateur pour utiliser cette application...' }
 		],
 		htmlAttrs: {
-			lang: 'fr'
+			lang: 'en'
 		},
 		script: [
 			{ src: '/js/qrcode.js' }
@@ -49,12 +49,12 @@ module.exports = {
 				file: 'fr.js'
 			}
 		],
-		defaultLocale: 'fr',
+		defaultLocale: 'en',
 		strategy: 'no_prefix',
 		lazy: true,
 		langDir: 'lang/',
 		vueI18n: {
-			fallbackLocale: 'fr'
+			fallbackLocale: 'en'
 		}
 	},
 	router: {
