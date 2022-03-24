@@ -119,7 +119,7 @@ app.get('/p/:salle', function (req) {
 		req.session.identifiant = identifiant
 		req.session.nom = ''
 		req.session.avatar = ''
-		req.session.langue = 'fr'
+		req.session.langue = 'en'
 		req.session.statut = 'joueur'
 		req.session.salles = []
 		req.session.cookie.expires = new Date(Date.now() + (3600 * 24 * 7 * 1000))
@@ -152,7 +152,7 @@ app.post('/api/creer-salle', function (req, res) {
 				req.session.nom = ''
 				req.session.avatar = ''
 				if (req.session.langue === '' || req.session.langue === undefined) {
-					req.session.langue = 'fr'
+					req.session.langue = 'en'
 				}
 				req.session.statut = 'animateur'
 				req.session.salles.push(salle)
