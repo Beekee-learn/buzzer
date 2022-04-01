@@ -1,6 +1,6 @@
 <template>
 	<div id="page">
-		<div id="accueil" :style="{'background-image': 'url(./img/digibuzzer.jpg)'}">
+		<div id="accueil" :style="{'background-color': '#7B68EE'}">
 			<div id="langues">
 				<span class="bouton" role="button" tabindex="0" :class="{'selectionne': langue === 'fr'}" @click="modifierLangue('fr')">FR</span>
 				<span class="bouton" role="button" tabindex="0" :class="{'selectionne': langue === 'en'}" @click="modifierLangue('en')">EN</span>
@@ -9,7 +9,7 @@
 			<div id="conteneur">
 				<div id="contenu">
 					<h1>
-						<span>Digibuzzer</span> <span>by La Digitale</span>
+						<span>Digibuzzer</span>
 					</h1>
 					<div>
 						<p v-html="$t('slogan')" />
@@ -239,7 +239,6 @@ export default {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(255, 255, 255, 0.55);
 }
 
 #conteneur {
@@ -293,16 +292,18 @@ export default {
     text-transform: uppercase;
 	padding: 1em 1.5em;
 	margin-right: 1em;
-    border: 2px solid #00ced1;
+    border: 2px solid white;
 	border-radius: 2em;
-    background: #46fbff;
+    background: white;
     cursor: pointer;
     transition: all ease-in 0.1s;
+    color:black;
 }
 
 #actions .bouton:hover {
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-	background: #fff;
+	background: grey;
+	color:black;
 }
 
 #actions .bouton:last-child {
